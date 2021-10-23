@@ -4,7 +4,8 @@ Rust utils using std::net
 
 ## Utils
 
-- [ ] [tcp-echo-server](tcp-echo-server/)
-- [ ] [tcp-echo-client](tcp-echo-client/)
-- [ ] [udp-echo-server](udp-echo-server/)
-- [ ] [udp-echo-client](udp-echo-client/)
+### [tcp-echo-server](tcp-echo-server/) and [tcp-echo-client](tcp-echo-client/)
+
+![tcp-echo](assets/tcp-echo.png)
+
+### [udp-echo-server](udp-echo-server/) and [udp-echo-client](udp-echo-client/)
