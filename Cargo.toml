@@ -1,0 +1,2 @@
+[workspace]
+members = ["tcp-echo-server", "tcp-echo-client", "udp-echo-server", "udp-echo-client"]
