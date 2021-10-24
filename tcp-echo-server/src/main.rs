@@ -28,11 +28,11 @@ fn handle_client(mut stream: TcpStream) {
     while match stream.read(&mut buf) {
         Ok(size) => {
             // byte 转字符串
-            let data = from_utf8(&buf[0..size]).unwrap();
+            let data = from_utf8(&buf[..size]).unwrap();
             if size > 0 {
                 // echo back
                 println!("Recv from client:{:?}", data);
-                stream.write_all(&buf[0..size]).unwrap();
+                stream.write_all(&buf[..size]).unwrap();
                 true
             } else {
                 // 消息长度为 0，关闭连接
